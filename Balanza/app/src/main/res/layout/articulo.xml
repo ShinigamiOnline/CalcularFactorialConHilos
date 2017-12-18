@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNombre_ticket"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:layout_toEndOf="@+id/img_ticket"
+        android:layout_x="102dp"
+        android:layout_y="2dp"
+        android:gravity="center_vertical"
+        android:text="Nombre :  "
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="14dp"
+    />
+
+    <ImageView
+        android:id="@+id/img_ticket"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_x="7dp"
+        android:layout_y="2dp"
+        app:srcCompat="@drawable/manzana"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="4dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtPrecio_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_ticket"
+        android:layout_alignEnd="@+id/txtNombre_ticket"
+        android:layout_below="@+id/txtNombre_ticket"
+        android:layout_toEndOf="@+id/img_ticket"
+        android:gravity="center_vertical"
+        android:text="Precio:" />
+</RelativeLayout>

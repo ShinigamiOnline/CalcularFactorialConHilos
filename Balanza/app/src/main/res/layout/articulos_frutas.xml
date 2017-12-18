@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="FRUTAS"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_platano"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:background="@drawable/platano" />
+
+            <Button
+                android:id="@+id/btn_manzana"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:background="@drawable/manzana" />
+
+            <Button
+                android:id="@+id/btn_mango"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:background="@drawable/mangp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:text="2,25 €/kg" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:text="1,45 €/KG"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4,50 €/unid." />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
